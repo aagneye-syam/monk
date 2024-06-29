@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import Sidebar from '../../components/sidebar/Sidebar'
+import Sidebar from '../../components/sidebar/Sidebar'; // Assuming Sidebar is in the same directory
+import GenContent from '../../components/GenContent/GenContent';
 
 const Home = () => {
   const [inputValue, setInputValue] = useState(''); // State for text box input
@@ -18,19 +19,23 @@ const Home = () => {
     <div className="home-container">
       <Sidebar />
       <main className="main-content-container">
-        {/* Your main home page content here */}
+        <GenContent />
         <div className="content-wrapper">
           {/* Your main content goes here */}
         </div>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} style={{ justifySelf: 'flex-end' }}>
           <div className="input-container">
             <input
               type="text"
               value={inputValue}
               onChange={handleChange}
               placeholder="Enter text here..."
+              style={{ width: '42%' }}
+              
             />
-            <button type="submit">Submit</button>
+            <button type="submit" className="custom-input-button">
+              Submit
+            </button>
           </div>
         </form>
       </main>
