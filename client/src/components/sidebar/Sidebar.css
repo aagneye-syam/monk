@@ -1,0 +1,38 @@
+.sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 100vh;
+        background-color: black;
+        color: white; /* Set default text color to white */
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .sidebar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        border-bottom: 1px solid #ddd;
+      }
+      
+      .logo {
+        font-weight: bold;
+        color: inherit; /* Inherit text color from sidebar */
+      }
+      
+      .inbox {
+        color: inherit; /* Inherit text color from sidebar */
+      }
+      
+      .profile-button {
+        margin-top: auto;
+        background-color: #333; /* Adjusted button background color */
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        cursor: pointer;
+      }
+      
