@@ -8,6 +8,7 @@
         color: white; /* Set default text color to white */
         display: flex;
         flex-direction: column;
+        border-right: 1px solid #ddd;
       }
       
       .sidebar-header {
