@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Sidebar from '../components/sidebar/Sidebar.jsx'; // Assuming Sidebar component path
+import Sidebar from '../../components/sidebar/Sidebar'
 
 const Home = () => {
   const [inputValue, setInputValue] = useState(''); // State for text box input
